@@ -1,0 +1,11 @@
+{
+  "name": "cn - Flask Control Panel",
+  "install": "./.cursor/install.sh",
+  "terminals": [
+    {
+      "name": "gunicorn",
+      "command": "cd /workspace && . .venv/bin/activate && exec gunicorn app:app --bind 0.0.0.0:10000"
+    }
+  ],
+  "ports": [10000]
+}
